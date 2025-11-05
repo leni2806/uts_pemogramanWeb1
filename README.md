@@ -65,11 +65,11 @@ Website ini merupakan implementasi dari **Soal UTS Pemrograman Web 1**, dengan t
 
 #### Registrasi
 
-<img src="img/daftar.png">
+<img src="img/registrasi.png">
 
 #### Lupa Password
 
-<img src="img/lupa pw.png">
+<img src="img/lupa_sandi.png">
 
 ### 2️⃣ Dashboard
 
