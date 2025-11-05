@@ -129,11 +129,74 @@ Website ini merupakan implementasi dari **Soal UTS Pemrograman Web 1**, dengan t
 
 ## 🎨 Desain & Tampilan
 
-* Warna dominan **biru (#2b6cb0)** dan **putih**.
+* Warna dominan **pink pastel** dan **pulple**.
 * Desain menggunakan konsep **clean minimalis**.
 * Layout menggunakan **Flexbox** dan **CSS Grid**.
 * Semua tombol, input, dan elemen UI diseragamkan agar konsisten di setiap halaman.
 
 ---
+
+## 🧠 Teknologi dan Fitur
+
+### Teknologi
+| Teknologi            | Fungsi                                                            |
+| -------------------- | ----------------------------------------------------------------- |
+| **HTML5**            | Struktur halaman utama                                            |
+| **CSS3**             | Desain dan tata letak halaman                                     |
+| **JavaScript (ES6)** | Logika interaktif, manipulasi DOM, dan penyimpanan data sementara |
+| **LocalStorage**     | Menyimpan sesi pengguna dan riwayat pemesanan                     |
+| **SessionStorage**   | Menyimpan data keranjang dan status login                         |
+
+### Sistem Pemesanan & Tracking
+* Generasi nomor DO otomatis dengan format tahun + random number
+* Status tracking realtime dengan timestamp
+* History pesanan dengan detail lengkap
+* Validasi stok otomatis saat checkout
+* Role-based access (Admin/User)
+
+### Keamanan
+* Validasi form input
+* Proteksi route berdasarkan login
+* Role-based permissions
+* Session management
+* Data persistence dengan Web Storage API
+
+---
+
+## ▶️ Cara Menjalankan Program
+
+### Untuk User Biasa:
+1. Pastikan semua file telah diekstrak dalam satu folder.
+2. Buka file **`login.html`** menggunakan browser.
+3. Login menggunakan data contoh:
+   ```
+   Email: rina@gmail.com
+   Password: rina123
+   ```
+4. Dari dashboard, Anda dapat:
+   - Melihat katalog buku
+   - Melakukan pemesanan
+   - Mengecek status pesanan
+   - Melihat history pembelian
+
+### Untuk Admin:
+1. Login menggunakan akun admin:
+   ```
+   Email: admin@example.com
+   Password: admin123
+   ```
+2. Akses fitur admin:
+   - Manajemen stok buku
+   - Konfirmasi pesanan baru
+   - Update status pesanan
+   - Lihat semua history transaksi
+
+### Alur Pemesanan:
+1. User login dan pilih buku
+2. Checkout dan isi data pengiriman
+3. Sistem generate nomor DO
+4. Admin terima pesanan
+5. Admin update status pesanan
+6. User bisa tracking dengan nomor DO
 
 LINK TUGAS (https://youtu.be/4xcz86bI788)
