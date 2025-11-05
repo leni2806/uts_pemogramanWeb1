@@ -61,25 +61,79 @@ Website ini merupakan implementasi dari **Soal UTS Pemrograman Web 1**, dengan t
 ### Capture
 #### Login
 
-<img src="img/login.png">
+<img src="login.png"> 
 
 #### Registrasi
 
-<img src="img/registrasi.png">
+<img src="registrasi.png"> 
 
 #### Lupa Password
 
-<img src="img/lupa_sandi.png">
+<img src="lupa_sandi.png"> 
 
 ### 2️⃣ Dashboard
 
 * Setelah login, pengguna diarahkan ke **dashboard.html**.
 * Menampilkan **greeting otomatis** berdasarkan waktu (pagi, siang, sore, malam).
 * Memuat nama pengguna yang sedang login.
-* Menyediakan navigasi cepat ke halaman stok, checkout, dan tracking.
+* Menyediakan navigasi cepat ke halaman stok/katalog, checkout, dan tracking,laporan, history.
 
 ### Capture
 
-<img src="img/dashboard.png">
+<img src="dashboard.png"> 
+
+### 3️⃣ Katalog Buku (stok.html)
+
+* Menampilkan tabel berisi daftar buku dari variabel `dataKatalogBuku`.
+* Setiap buku menampilkan: kode, cover, nama, jenis, edisi, stok, dan harga.
+* Dapat menambahkan buku baru melalui form tanpa reload halaman (menggunakan manipulasi DOM).
+
+### Capture
+
+<img src="katalog.png"> 
+
+### 4️⃣ Pemesanan & Checkout (checkout.html)
+
+* Pengguna dapat memilih buku dari dropdown yang diambil dari `dataKatalogBuku`.
+* Jumlah item bisa diatur sebelum dimasukkan ke keranjang.
+* Semua item yang ditambahkan ke keranjang ditampilkan dalam tabel dengan opsi hapus.
+* Setelah mengisi data pemesan dan metode pembayaran, sistem akan membuat nomor **Delivery Order (DO)** secara otomatis.
+* Pesanan disimpan ke `localStorage` untuk simulasi penyimpanan database.
+
+### Capture
+
+<img src="img/pemesanan.png">
+
+### 5️⃣ Tracking & History Pesanan
+
+#### Untuk User:
+* Pengguna dapat mencari status pengiriman berdasarkan nomor DO
+* Melihat detail lengkap pesanan dan status terkini
+* Melihat riwayat update status pesanan
+* Akses ke history pemesanan pribadi
+
+#### Untuk Admin:
+* Melihat semua pesanan yang masuk
+* Mengkonfirmasi pesanan baru dengan tombol "Terima Pesanan"
+* Mengupdate status pesanan melalui dropdown:
+  - Sedang Diproses
+  - Dalam Pengiriman
+  - Selesai
+* Setiap update status otomatis tercatat dengan timestamp
+
+### Capture
+
+<img src="img/tracking.png">
+
+---
+
+## 🎨 Desain & Tampilan
+
+* Warna dominan **biru (#2b6cb0)** dan **putih**.
+* Desain menggunakan konsep **clean minimalis**.
+* Layout menggunakan **Flexbox** dan **CSS Grid**.
+* Semua tombol, input, dan elemen UI diseragamkan agar konsisten di setiap halaman.
+
+---
 
 LINK TUGAS (https://youtu.be/4xcz86bI788)
