@@ -1,0 +1,170 @@
+:root{
+  --pink: #f8d7e0;
+  --purple: #c9a0dc;
+  --purple-deep: #a77fc6;
+  --muted: #f5f5f7;
+}
+
+body.bg-pastel {
+  background: linear-gradient(180deg, #fff7fb 0%, #fff 100%);
+  min-height:100vh;
+  color: #333;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Navbar */
+.navbar-pastel { 
+  background: linear-gradient(90deg,var(--pink), #ffffff); 
+  box-shadow: none; 
+  border-bottom:1px solid rgba(0,0,0,0.04); 
+}
+
+.text-purple { color: var(--purple-deep) !important; }
+
+/* Buttons */
+.btn-pink { 
+  background: linear-gradient(180deg,var(--pink), #f6c7db); 
+  color:#222; border:none; 
+  box-shadow: 0 6px 18px rgba(201,160,220,0.12); 
+}
+.btn-pink:hover { 
+  transform: translateY(-2px); 
+  box-shadow: 0 10px 24px rgba(201,160,220,0.14); 
+}
+
+.btn-purple { 
+  background: linear-gradient(180deg,var(--purple), var(--purple-deep)); 
+  color:#fff; border:none; 
+}
+.btn-pale { 
+  background: rgba(255,255,255,0.9); 
+  color:var(--purple-deep); 
+  border:1px solid rgba(0,0,0,0.04); 
+}
+.btn-outline-purple { 
+  border:1px solid var(--purple-deep); 
+  color:var(--purple-deep); 
+  background:transparent; 
+}
+
+/* Card */
+.card-dashboard { 
+  min-height:140px; 
+  border-radius:12px; 
+  box-shadow: 0 6px 18px rgba(201,160,220,0.06); 
+}
+.card-animate { 
+  transition: all 220ms ease; 
+  border-radius:12px; 
+}
+.card-animate:hover { 
+  transform: translateY(-6px); 
+  box-shadow: 0 20px 40px rgba(201,160,220,0.08); 
+}
+
+/* Images & Inputs */
+.cover-img { height:220px; object-fit:cover; border-top-left-radius:12px; border-top-right-radius:12px; }
+input.form-control, textarea.form-control, select.form-select { border-radius:8px; }
+.btn { border-radius:10px; }
+.small.text-muted { color:#666; }
+
+/* simple fade-in */
+@keyframes fadeInUp { 
+  from {opacity:0; transform: translateY(8px);} 
+  to {opacity:1; transform: translateY(0);} 
+}
+.container > .p-4, .card { animation: fadeInUp 360ms ease both; }
+
+/* Card Buttons */
+.card-body a.btn {
+  margin-top: 8px;  /* tombol pasti terlihat */
+  display: inline-block;
+}
+
+/* responsive tweaks */
+@media (max-width:576px){
+  .cover-img { height:160px; }
+  .navbar-pastel .container { padding-left:12px; padding-right:12px; }
+}
+
+/* ================================
+   HISTORY & LAPORAN TABLE STYLES
+================================ */
+.table.pastel-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(201,160,220,0.08);
+  overflow: hidden;
+  animation: fadeInUp 400ms ease both;
+}
+
+.table.pastel-table th {
+  background: linear-gradient(90deg, var(--pink), var(--purple));
+  color: #fff;
+  padding: 12px 10px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.table.pastel-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f0eef5;
+  color: #444;
+  background-color: #fff;
+}
+
+.table.pastel-table tr:hover td {
+  background-color: var(--pink);
+  color: #333;
+  transition: background-color 0.2s ease;
+}
+
+/* Table headings */
+.container h2 {
+  color: var(--purple-deep);
+  margin-top: 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  font-weight: 600;
+  animation: fadeInUp 300ms ease both;
+}
+
+/* Alert sukses */
+.alert-success {
+  background: linear-gradient(90deg, var(--purple), var(--pink));
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(201,160,220,0.12);
+}
+
+/* Responsive tweaks for table */
+@media (max-width: 768px) {
+  .table.pastel-table th, 
+  .table.pastel-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
+/* Animasi emoji ayun-ayun */
+@keyframes swing {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+}
+
+#emoji {
+  animation: swing 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+/* Hover card dashboard: shadow dan naik sedikit */
+.card-dashboard.card-animate:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
