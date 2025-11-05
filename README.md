@@ -102,7 +102,7 @@ Website ini merupakan implementasi dari **Soal UTS Pemrograman Web 1**, dengan t
 
 ### Capture
 
-<img src="img/pemesanan.png">
+<img src="pemesanan.png"> 
 
 ### 5️⃣ Tracking & History Pesanan
 
@@ -123,7 +123,7 @@ Website ini merupakan implementasi dari **Soal UTS Pemrograman Web 1**, dengan t
 
 ### Capture
 
-<img src="img/tracking.png">
+<img src="tracking.png"> 
 
 ---
 
